@@ -727,4 +727,14 @@ export class BulkWriter {
   _setMaxBatchSize(size: number): void {
     this.maxBatchSize = size;
   }
+
+  /**
+   * Sets the rate limiter for testing.
+   *
+   * @private
+   */
+  // Visible for testing.
+  _setRateLimiter(limiter: RateLimiter): void {
+    this.rateLimiter = limiter;
+  }
 }
